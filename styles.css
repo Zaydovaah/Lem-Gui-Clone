@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+:root {
+  --background: rgb(255, 209, 72);
+}
+
+
+body {
+    height: auto;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+/* navigation styles start here */
+
+header {
+height: 50px;
+max-width: 768px;
+width: 100%;
+background-color: #222;
+display: grid;
+grid-template-columns: 3fr 7fr;
+text-align: center;
+margin: 0;
+padding: 0;
+position: fixed;
+box-sizing: border-box;
+border-bottom: rgb(221, 220, 220) 1px solid;
+z-index: 999;
+top: 0;
+  /*background: #222222;
+  width: 100%;
+  position: fixed;
+  border-width: 0 0 1px;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  box-sizing: border-box;*/
+}
+
+
+.logo {
+    height: 50px;
+    color: var(--background);
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+
+/* Navigation links style */
+
+
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 105%;
+  left: 0;
+  background: #222222;
+  max-width: 768px;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  box-sizing: border-box;
+}
+
+nav ul {
+  margin: 5px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: block;
+  padding: 10px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  opacity: 0.7;
+  transition: all 500ms ease-in-out;
+}
+
+nav li:hover {
+  background-color: #0f0e0e;
+  transition: all 500ms ease-in-out;
+}
+
+.logo:hover {
+  background-color: #000;
+  transition: all 500ms ease-in-out;
+}
+
+.don-btn:hover {
+  background-color: rgb(255, 209, 72);
+  color: #3c3c3c;
+  border: 1px solid #fff;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*nav button menu */
+  
+.nav-toggle {
+    position: absolute;
+    top: 20px;
+    right: 1.2em;
+    z-index: 999;
+    opacity: 0;
+    transform: scale(4);
+}
+
+.nav-toggle-btn {
+    opacity: 1;
+    background-color: #222222;
+    border-color: #ddd;
+    border-radius: 4px;
+    border-width: 2px;
+    margin: 20px;
+    padding: 5px 5px;
+    position: absolute;
+    right: -6px;
+    top: -8px;
+    cursor: pointer;
+}
+ 
+
+.btn-bar {
+    width: 20px;
+    background-color: #888;
+    margin-bottom: 3px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.nav-toggle-btn:hover {
+    background-color: #888;
+    transition: all 500ms ease-in-out;
+}
+ 
+.btn-bar:hover {
+    background-color: #222222;
+    transition: all 500ms ease-in-out;
+}
+
+          /* Faire un Don Button */
+.don-btn {
+    background-color: var(--background);
+    border: none;
+    border-radius: 4px 4px 0 0;
+    padding: 10px 15px;    
+}
+
+.don-btn a {
+    color: #222222;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+}
+      
+      /* !!!! NAV RESPONSIVENESS !!!! */
+
+
+
+
+
+     /* !!! NAV RESPONSIVE END !!!! */
+
+/* ---------- HEADER STYLING ENDS HERE --------------*/
+
+
+
+/* -----------SECTION 1 STYLING STARTS HERE -------------*/
+.section1 {
+    color: white;
+    background-color: grey;
+    height: 450px;
+    width: 100%;
+    background-image: url("images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 510px;
+}
+
+
+.sect1head {
+    position: relative;
+    top: 70px;
+    margin-left: 40px;
+}
+.sect1head h1 {
+    font-size: 20px;
+    font-family: "Abril Fatface", cursive;
+}
+
+.sect1head p {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.sect1head button {
+    margin-top: 10px;
+    font-size: 10px;
+    background-color: rgb(255, 209, 72);
+    border: none;
+    padding: 8px 8px;
+}
+/*-------------- SECTION 1 STYLING ENDS HERE-------------*/
+
+
+/*-------------CONTENT STYLING STARTS HERE---------------*/
+      /*-------------ACTIONS STYLING--------------*/
+.actions-container {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.action {
+    background-color: rgb(255, 209, 72);
+    padding: 10px;
+    margin: 5px 15px;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.action h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-family: "Abril Fatface", cursive;
+    color: #212529;
+}
+
+
+
+
+
+       /*--------ACTIONS STYLING ENDS HERE-----*/
+
+
+       /*-------SERVICES STYLING STARTS HERE-----*/
+.services {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.services .underline {
+    background-color: rgb(255, 209, 72);
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+   /* position: relative;
+    left: 120px; */
+}
+        /* ACTION AREA*/
+/* .action-area {
+    background-color: blue;
+} */
+
+
+.action-area {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.action-area h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+/*.underline {
+    background-color: rgb(255, 209, 72);
+    width: 50px;
+    height: 1px;
+    margin: 0 200px; 
+    border-radius: 4px;
+}*/
+
+.action-model {
+    margin-bottom: 0 0 20px 0;
+    padding: 0;
+    border: #c2bcbc 1px solid;
+}
+
+.action-model img {
+    width: 100%;
+    height: auto;
+}
+
+.action-model figcaption {
+    margin: 0 15px;
+    display: block;
+}
+
+/*This is for Progress Bar */
+.meter { 
+    height: 20px;
+    padding: 0;
+    margin-top: 15px;
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+    
+.meter > span {
+    display: block;
+    height: 100%;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(255, 209, 72);
+    position: relative;
+    overflow: hidden;
+}
+        /*Progress Bar End */
+
+.action-model h2 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    text-align: left;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.action-model h6 {
+    text-align: left;
+}
+
+.action-model i {
+    margin: 5px;
+}
+
+.action-model figcaption p {
+    text-align: left;
+    color: #212529;
+    font-size: 16px;
+}
+
+.moveit {
+    display: flex;
+    justify-content: space-between;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";*/
+}
+
+.moveright p, h2 {
+    text-align: right;
+}
+
+.moveleft p, h2 {
+    text-align: left;
+}
+        /*ACTION AREA ENDS HERE */
+
+
+        /*NEWS STARTS HERE*/
+.news {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.news h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* .underline {
+    position: relative;
+    left: 200px;;
+}*/
+
+.news p {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}   
+
+.news img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 426px){
+    .services {
+        margin: 0 70px;
+    }
+}
+
+
+.newscardmodel {
+    margin-bottom: 0 0 20px 0;
+    padding: 0;
+    border: #c2bcbc 1px solid;
+}
+
+.newscardmodel h2 {
+    text-align: left;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.newscardmodel p {
+    text-align: left;
+    margin: 10px 10px;
+}
+        /*NEWS END*/
+
+
+        /* DONATORS START*/
+.donators {
+    display: grid;
+    grid-row-gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.donators h1 {
+    color: #4c4c4c;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+.donators p {
+    color: #4c4c4c;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}   
+
+.donators img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+.donatorcardmodel h2 {
+    color: #4c4c4c;
+    text-align: center;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.fab {
+    height: 30px;
+    width: 40px;
+    padding-top: 10px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #a0db8e;
+    color: #fff;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.fab:hover {
+    background-color: #6ca05c;
+}
+        /*DONATORS END */
+
+        /*CONTACT*/
+.contact {
+    margin: 30px 10px;
+}
+
+.contact h1 {
+    color: #4c4c4c;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.contact p {
+    color: #4c4c4c;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+.fillform {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 0;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.fillform input {
+    height: 100%;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-rendering: auto;
+    text-align: start;
+    cursor: text;
+}
+
+.fillform i {
+    background-color: rgb(228, 224, 224);
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    margin: 0;
+    font-size: 18px;
+    border:none;
+    box-sizing: border-box;
+}
+
+.fill1 {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    border: 1px solid #ccc;  
+    box-sizing: border-box;
+}
+
+.fillform .message input {
+    display: table-cell;
+    width: 100%;
+    height: 160px;
+    padding: 7px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    -webkit-appearance: textarea;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.sendbtn button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+
+        /*CONTACT END */
+
+/*------------ SERVICES STYLING ENDS HERE --------*/
+
+
+
+/*-----------------------------FOTER STYLING STARTS HERE-------------------*/
+.footcontainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 20px;;
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+            /*---FOOTER CONTACT---*/
+.footercontact .fas {
+    margin: 0 10px;
+    font-size: inherit;
+    box-sizing: border-box;
+}            
+            /*---FOOTER CONTACT END--*/
+
+            /*FOOTER ABOUT START--*/
+.footerabout {
+    margin: 0;
+}
+            
+.footerabout i {
+    margin: 0 10px;
+} 
+            /*FOOTER ABOUT END */
+
+      /*FOOTER MEDIA SUBSCRIBE START*/
+.footermediasub .fab {
+    border-radius: 0;
+    font-size: 20px;
+    padding-bottom: 26px;
+    margin: 10px 5px;
+    background-color: #222222;
+    border: rgb(199, 193, 193) 1px solid;
+    color: rgb(209, 203, 203);
+    box-sizing: border-box;
+}
+
+.fillmedia {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 5px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+}
+
+.fillmedia input {
+    width: 90%;
+    height: 35px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    cursor: text;
+    font-size: inherit;
+}
+
+.fillmedia button {
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.fillmedia button:hover {
+    color: #222222;
+    background-color: var(--background);
+    transition: all 500ms ease-in-out;
+}
+
+
+         /* MOBILE ---  VERSION */
+
+@media (max-width: 500px) {
+    body {
+        height: auto;
+    }
+    .logo {
+        position: relative;
+        top: -2px;
+    }
+    .action p {
+        display: none;
+    }
+    .action-container {
+        padding: 0;
+        grid-template-rows: repeat(3,1fr);
+        grid-column-gap: 3px;
+        height: 180px;
+        position: relative;
+        top: -50px;
+    }
+    .contact {
+        height: 550px;
+    }
+}
+               /*MOBILE END */
+
+
+/*@media (min-width: 500px) {
+    .sect1head h1 {
+        font-size: 25px;
+        font-family: "Abril Fatface", cursive;
+    }
+    
+    .sect1head p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .sect1head button {
+        margin-top: 10px;
+        font-size: 15px;
+        background-color: rgb(255, 209, 72);
+        border: none;
+        padding: 8px 8px;
+    }
+    .actions-container {
+        padding: 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 3px;
+        height: 180px;
+        position: relative;
+        top: -50px;
+    }
+    .action {
+        text-align: left;
+        padding: 10px 5px;
+    }
+    .action h4 {
+        font-size: 20px;
+    }
+    .action p {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+} */
+
+        /*MORE LIKE DESKTOP - TABLET */
+
+@media (min-width: 769px) {
+    body {
+        max-width: 2440px;
+        width: 100%;
+        height: auto;
+    }
+    header {
+        max-width: 2440px;
+        width: 100%;
+    }
+    nav {
+        max-width: 2440px;
+        width: 100%;
+        display: block;
+        transform: scale(1,1);
+        position: relative;
+        top: -1px;
+        text-align: right;
+    }
+    nav li {
+        display: inline-block;
+        
+    }
+    .logo {
+        position: relative;
+        top: -2px;
+    }
+    nav li a {
+        font-size: 17px;
+    }
+    .nav-toggle, .nav-toggle-btn {
+        display: none;
+    }
+    .section1 {
+        height: 600px;
+        background-size: cover;
+    }
+    /****/
+    .sect1head h1 {
+        font-size: 25px;
+        font-family: "Abril Fatface", cursive;
+    }
+    
+    .sect1head p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .sect1head button {
+        margin-top: 10px;
+        font-size: 15px;
+        background-color: rgb(255, 209, 72);
+        border: none;
+        padding: 8px 8px;
+    }
+    .actions-container {
+        margin: 0 70px;
+        padding: 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 3px;
+        justify-items: center;
+        height: 180px;
+        position: relative;
+        top: -50px;
+    }
+    .action {
+        height: 150px;
+        text-align: left;
+        padding: 10px 30px;
+        margin: 0 50px;
+        position: relative;
+
+    }
+    .action h4 {
+        font-size: 25px;
+    }
+    .action p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .action-models-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .newscardmodels-container {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(360px, 1fr) );
+        justify-items: center;
+    }
+    .donatorcardmodels-container {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(360px, 1fr) );
+        justify-items: center;
+    }
+    .donators img {
+        width: 80%;
+    }
+    .fillform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-column-gap: 20px;
+    }
+    .left-column {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 30px;
+        padding-top: 30px;
+    }   
+    
+    .right-column {
+        display: grid;
+        padding-top: 30px;
+        width: 80%;
+    }
+    .right-column input {
+        margin-bottom: 20px;
+    }
+    .contact {
+        height: 400px;
+    }
+}
+
+
+
